@@ -2513,8 +2513,6 @@ body {
     gap: 3px;
     text-align: center;
   }
-
-  <style>
 .gp-whatsapp-float,
 .gp-whatsapp-float * {
   box-sizing: border-box;
@@ -2633,7 +2631,6 @@ body {
     display: none;
   }
 }
-</style>
 
   .back-to-top {
     right: 12px;
