@@ -2514,185 +2514,126 @@ body {
     text-align: center;
   }
 
-  .gp-whatsapp-float,
-  .gp-whatsapp-float * {
-    box-sizing: border-box;
-  }
+  <style>
+.gp-whatsapp-float,
+.gp-whatsapp-float * {
+  box-sizing: border-box;
+}
 
+.gp-whatsapp-float {
+  position: fixed;
+  z-index: 99999;
+  right: 24px;
+  bottom: 80px;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+
+  box-shadow: 0 3px 12px rgba(0,0,0,.12);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+/* Clean outer ring */
+.gp-whatsapp-float::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,.08);
+  pointer-events: none;
+}
+
+.gp-whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.16);
+}
+
+.gp-whatsapp-float:focus-visible {
+  outline: 3px solid rgba(37,211,102,.25);
+  outline-offset: 3px;
+}
+
+.gp-whatsapp-float svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  display: block;
+}
+
+/* Tooltip */
+.gp-whatsapp-tooltip {
+  position: absolute;
+  right: 72px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding: 10px 13px;
+  border-radius: 8px;
+
+  background: #fff;
+  color: #24324a;
+
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  box-shadow: 0 10px 25px rgba(25,45,75,.14);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  white-space: nowrap;
+
+  transition: .25s ease;
+}
+
+.gp-whatsapp-tooltip::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.gp-whatsapp-float:hover .gp-whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
   .gp-whatsapp-float {
-    position: fixed;
-    z-index: 99999;
-    right: 24px;
-    bottom: 80px;
-
-    width: 58px;
-    height: 58px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-    background: #25d366;
-    color: #ffffff;
-
-    text-decoration: none;
-
-    box-shadow:
-      0 12px 30px rgba(18, 140, 72, 0.3),
-      0 4px 10px rgba(0, 0, 0, 0.12);
-
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease,
-      background 0.25s ease;
-  }
-
-  .gp-whatsapp-float:hover {
-    transform: translateY(-4px) scale(1.04);
-    background: #20bd5a;
-
-    box-shadow:
-      0 18px 38px rgba(18, 140, 72, 0.38),
-      0 6px 14px rgba(0, 0, 0, 0.13);
-  }
-
-  .gp-whatsapp-float:focus-visible {
-    outline: 4px solid rgba(37, 211, 102, 0.28);
-    outline-offset: 4px;
+    width: 54px;
+    height: 54px;
+    right: 16px;
+    bottom: 18px;
   }
 
   .gp-whatsapp-float svg {
-    display: block;
-    width: 31px;
-    height: 31px;
-    fill: currentColor;
+    width: 24px;
+    height: 24px;
   }
 
-  /* Tooltip */
   .gp-whatsapp-tooltip {
-    position: absolute;
-    right: 72px;
-    top: 50%;
-
-    min-width: 145px;
-    padding: 10px 13px;
-
-    transform:
-      translateY(-50%)
-      translateX(8px);
-
-    border-radius: 9px;
-    background: #ffffff;
-    color: #24324a;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.3;
-    font-weight: 600;
-    text-align: center;
-    white-space: nowrap;
-
-    box-shadow:
-      0 10px 25px rgba(25, 45, 75, 0.14);
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    transition:
-      opacity 0.22s ease,
-      visibility 0.22s ease,
-      transform 0.22s ease;
+    display: none;
   }
-
-  .gp-whatsapp-tooltip::after {
-    content: "";
-    position: absolute;
-    right: -6px;
-    top: 50%;
-
-    width: 12px;
-    height: 12px;
-
-    background: #ffffff;
-    transform:
-      translateY(-50%)
-      rotate(45deg);
-  }
-
-  .gp-whatsapp-float:hover
-    .gp-whatsapp-tooltip,
-  .gp-whatsapp-float:focus-visible
-    .gp-whatsapp-tooltip {
-    opacity: 1;
-    visibility: visible;
-
-    transform:
-      translateY(-50%)
-      translateX(0);
-  }
-
-  /* Pulse animation */
-  .gp-whatsapp-float::before {
-    content: "";
-    position: absolute;
-    inset: -7px;
-
-    border: 2px solid rgba(37, 211, 102, 0.38);
-    border-radius: 50%;
-
-    animation: gpWhatsappPulse 2s ease-out infinite;
-    pointer-events: none;
-  }
-
-  @keyframes gpWhatsappPulse {
-    0% {
-      opacity: 0.8;
-      transform: scale(0.88);
-    }
-
-    70% {
-      opacity: 0;
-      transform: scale(1.22);
-    }
-
-    100% {
-      opacity: 0;
-      transform: scale(1.22);
-    }
-  }
-
-  /* Mobile */
-  @media (max-width: 600px) {
-    .gp-whatsapp-float {
-      right: 16px;
-      bottom: 18px;
-
-      width: 54px;
-      height: 54px;
-    }
-
-    .gp-whatsapp-float svg {
-      width: 29px;
-      height: 29px;
-    }
-
-    .gp-whatsapp-tooltip {
-      display: none;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .gp-whatsapp-float,
-    .gp-whatsapp-tooltip {
-      transition: none;
-    }
-
-    .gp-whatsapp-float::before {
-      animation: none;
-    }
-  }
+}
+</style>
 
   .back-to-top {
     right: 12px;
