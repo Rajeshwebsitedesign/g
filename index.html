@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="G.P. Dental Care — modern dental care in Bharatpur, Chitwan.">
+  <meta name="theme-color" content="#1607df">
+  <title>G.P. Dental Care | Healthy Smile, Healthy Life</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h3l1.6 4.5-2.2 1.8a15 15 0 0 0 5.8 5.8l1.8-2.2 4.5 1.6v3c0 1.3-1 2.3-2.3 2.3C9.8 19.8 4.2 14.2 4.2 5.3 4.2 4 5.2 3 6.5 3Z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5l-4.7 1.5 1.5-4.6a8.5 8.5 0 1 1 15.8-4.4Z"/><path d="M8.2 7.3c.2-.5.5-.5.8-.5h.5l1.1 2.5c.1.3 0 .5-.2.7l-.8 1a8.3 8.3 0 0 0 3.8 3.8l1-.8c.2-.2.5-.3.7-.2l2.5 1.1v.5c0 .3 0 .6-.5.8-.8.4-2 .6-3.5.1-3.4-1.1-5.9-3.6-7-7-.5-1.5-.3-2.7.1-3.5Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 14h3M13 14h3M8 17h3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M2.8 20v-2.2A4.8 4.8 0 0 1 7.6 13h.8a4.8 4.8 0 0 1 4.8 4.8V20M14 14.2c.7-.5 1.6-.8 2.6-.8h.5a4.1 4.1 0 0 1 4.1 4.1V20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M12 3.3c-2.3-1.5-5.8-1.1-7.1 1.4-1.7 3.1.1 6.3 1.2 8.7.9 2 1.1 6.8 3.2 7.1 1.4.2 1.7-2.4 2.1-4.3.3-1.5.8-2.4 1.6-2.4s1.3.9 1.6 2.4c.4 1.9.7 4.5 2.1 4.3 2.1-.3 2.3-5.1 3.2-7.1 1.1-2.4 2.9-5.6 1.2-8.7-1.3-2.5-4.8-2.9-7.1-1.4Z"/></symbol>
+    <symbol id="i-filling" viewBox="0 0 24 24"><path d="M5 4h14v5a7 7 0 0 1-14 0V4Z"/><path d="M8 7h8M12 4v7M7 20h10"/></symbol>
+    <symbol id="i-extract" viewBox="0 0 24 24"><path d="M5 19 19 5M15 5h4v4M5 15v4h4"/><path d="M8 8.5c1.7-2.7 6.5-2.7 8.2.2"/></symbol>
+    <symbol id="i-root" viewBox="0 0 24 24"><path d="M7 4h10l-1 6-4 4-4-4-1-6Z"/><path d="M12 14v7M9 17l3-3 3 3"/></symbol>
+    <symbol id="i-clean" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></symbol>
+    <symbol id="i-rupee" viewBox="0 0 24 24"><path d="M6 5h12M6 9h12M8 5c5 0 7 1.5 7 4s-2 4-7 4l8 7"/></symbol>
+    <symbol id="i-patient" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6 20v-2a6 6 0 0 1 12 0v2M4 20h16"/></symbol>
+    <symbol id="i-doctor" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><path d="M5 21v-3a7 7 0 0 1 14 0v3M9 13v4M15 13v4M8 18h8"/><path d="M5 9h2v3H5zM17 9h2v3h-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5.4-8 11-8 11S4 15.4 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 9 5 5 5-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></symbol>
+  </svg>
+
+  <div class="site-chrome" id="site-chrome">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <a href="tel:+9779700000000"><svg><use href="#i-phone"></use></svg><span>Call us now: <strong>+977 970-0000000</strong></span></a>
+        <span class="top-separator"></span>
+        <a href="https://wa.me/9779700000000" target="_blank" rel="noopener noreferrer"><svg><use href="#i-whatsapp"></use></svg><strong>WhatsApp us</strong></a>
+        <span class="top-separator"></span>
+        <span><svg><use href="#i-clock"></use></svg><strong>Open: Sun–Sat 7AM–8PM</strong></span>
+        <span class="top-separator"></span>
+        <strong class="emergency">Emergency Care Available</strong>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="G.P. Dental Care home">
+          <img src="assets/images/gp-dental-logo.png" alt="G.P. Dental Care Pvt. Ltd." width="113" height="69">
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#specialists">Our Specialists</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button-header" href="#appointment">Book Appointment</a>
+          <div class="language-switch" aria-label="Website language">
+            <button class="language-button active" type="button" data-language="en" aria-pressed="true"><span>🇬🇧</span> English</button>
+            <span class="language-divider"></span>
+            <button class="language-button" type="button" data-language="ne" aria-pressed="false"><span>🇳🇵</span> नेपाली</button>
+          </div>
+          <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg><use href="#i-menu"></use></svg></button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="menu-overlay" data-close-menu></div>
+  <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-head">
+      <img src="assets/images/gp-dental-logo.png" alt="G.P. Dental Care Pvt. Ltd." width="113" height="69">
+      <button type="button" class="mobile-close" data-close-menu aria-label="Close menu"><svg><use href="#i-close"></use></svg></button>
+    </div>
+    <nav aria-label="Mobile navigation">
+      <a href="#services" data-close-menu>Services</a>
+      <a href="#why-us" data-close-menu>Why Us</a>
+      <a href="#specialists" data-close-menu>Our Specialists</a>
+      <a href="#gallery" data-close-menu>Gallery</a>
+      <a href="#reviews" data-close-menu>Reviews</a>
+      <a href="#faq" data-close-menu>FAQ</a>
+      <a href="#appointment" data-close-menu>Book Appointment</a>
+      <a href="#contact" data-close-menu>Find Us</a>
+    </nav>
+    <div class="mobile-language" aria-label="Website language">
+      <button class="language-button active" type="button" data-language="en" aria-pressed="true"><span>🇬🇧</span> English</button>
+      <button class="language-button" type="button" data-language="ne" aria-pressed="false"><span>🇳🇵</span> नेपाली</button>
+    </div>
+    <a class="button button-primary mobile-book" href="#appointment" data-close-menu>Book Appointment</a>
+  </aside>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal reveal-left">
+          <span class="hero-badge"><svg><use href="#i-users"></use></svg>4 Specialist Doctors, One Roof</span>
+          <h1>Healthy Smile,<br>Healthy Life</h1>
+          <p>Modern dental care in Bharatpur, Chitwan — from routine check-ups to root canals, implants, and orthodontics, backed by digital diagnosis and a fully sterilized, patient-first clinic.</p>
+          <div class="hero-actions">
+            <a class="button button-cyan" href="#appointment"><svg><use href="#i-calendar"></use></svg>Book Appointment</a>
+            <a class="button button-green" href="https://wa.me/9779700000000" target="_blank" rel="noopener noreferrer"><svg><use href="#i-calendar"></use></svg>Chat on WhatsApp</a>
+          </div>
+          <ul class="hero-benefits">
+            <li><span><svg><use href="#i-check"></use></svg></span>Affordable treatment</li>
+            <li><span><svg><use href="#i-check"></use></svg></span>Emergency care available</li>
+            <li><span><svg><use href="#i-check"></use></svg></span>Patient-centered care</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal reveal-right" aria-label="Smiling patient">
+          <div class="hero-ring"></div>
+          <div class="hero-person">
+            <img src="assets/images/hero-person.webp" alt="Smiling woman representing comfortable dental care" width="1000" height="1200">
+          </div>
+          <div class="experience-card"><strong>5+</strong><span>Years of<br>Experience</span></div>
+          <div class="services-card"><span class="services-card-icon"><svg><use href="#i-tooth"></use></svg></span><span><strong>14+ Services</strong><small>Complete dental care</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Clinic statistics">
+      <div class="stats-grid">
+        <article><strong>5<sup>+</sup></strong><span>Years of Experience</span></article>
+        <article><strong>14<sup>+</sup></strong><span>Dental Services</span></article>
+        <article><strong>4<sup>+</sup></strong><span>Specialist Doctors</span></article>
+        <article><strong>7<sup>d</sup></strong><span>Days a Week Open</span></article>
+      </div>
+    </section>
+
+    <section class="section section-soft services" id="services">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">What We Offer</span>
+          <h2>Complete Dental Care<br>Under One Roof</h2>
+          <p>From routine cleanings to full smile makeovers — we handle it all with<br class="desktop-only"> precision and care.</p>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+          <article class="service-card reveal"><span class="service-icon blue"><svg><use href="#i-tooth"></use></svg></span><h3>General Dental Check-up</h3><p>Routine exams and digital diagnosis to catch problems early, before they become expensive.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card reveal"><span class="service-icon teal"><svg><use href="#i-filling"></use></svg></span><h3>Tooth Filling</h3><p>Durable, tooth-coloured fillings that restore your tooth without changing how your smile looks.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card reveal"><span class="service-icon purple"><svg><use href="#i-tooth"></use></svg></span><h3>Tooth Extraction</h3><p>Safe, gentle removal of damaged or impacted teeth using modern anaesthesia.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card reveal"><span class="service-icon red"><svg><use href="#i-extract"></use></svg></span><h3>Root Canal Treatment (RCT)</h3><p>We save infected teeth with painless root canal procedures and proper anaesthesia.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card reveal"><span class="service-icon orange"><svg><use href="#i-clean"></use></svg></span><h3>Dental Cleaning &amp; Scaling</h3><p>Professional scaling clears plaque and tartar buildup that brushing alone cannot reach.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card reveal"><span class="service-icon green"><svg><use href="#i-sun"></use></svg></span><h3>Teeth Whitening</h3><p>In-clinic whitening for a brighter, more confident smile.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+
+          <article class="service-card service-extra"><span class="service-icon blue"><svg><use href="#i-tooth"></use></svg></span><h3>Dental Crowns</h3><p>Natural-looking crowns that protect damaged teeth and restore proper function.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card service-extra"><span class="service-icon teal"><svg><use href="#i-tooth"></use></svg></span><h3>Dental Implants</h3><p>Long-lasting tooth replacement designed to look and feel natural.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card service-extra"><span class="service-icon purple"><svg><use href="#i-tooth"></use></svg></span><h3>Braces &amp; Orthodontics</h3><p>Personalised orthodontic treatment for straighter teeth and a healthier bite.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card service-extra"><span class="service-icon red"><svg><use href="#i-phone"></use></svg></span><h3>Emergency Dental Care</h3><p>Fast care for dental pain, injuries, swelling and unexpected emergencies.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card service-extra"><span class="service-icon orange"><svg><use href="#i-patient"></use></svg></span><h3>Children’s Dentistry</h3><p>Gentle, friendly dental care designed to make children feel safe.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+          <article class="service-card service-extra"><span class="service-icon green"><svg><use href="#i-tooth"></use></svg></span><h3>Dentures</h3><p>Comfortable full and partial dentures made to restore confidence.</p><a href="#appointment">Book now <svg><use href="#i-arrow"></use></svg></a></article>
+        </div>
+
+        <div class="section-action reveal">
+          <button class="small-outline-button" id="services-toggle" type="button" aria-expanded="false" aria-controls="services-grid">See All Services <svg><use href="#i-chevron"></use></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="why-us">
+      <div class="container why-grid">
+        <div class="why-image reveal reveal-left">
+          <img src="assets/images/clinic-image.webp" alt="Modern dental treatment room" width="800" height="912" loading="lazy">
+          <div class="autoclave-card"><span><svg><use href="#i-sun"></use></svg></span><div><strong>B &amp; S Class Autoclave</strong><small>Sterilization, every visit</small></div></div>
+        </div>
+
+        <div class="why-copy reveal reveal-right">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>Dental Care That Doesn't<br>Feel Like a Chore</h2>
+          <p>At G.P Dental Care, we've built everything around making it easy — easy to book, comfortable to sit through, and affordable to continue. Your smile is our priority.</p>
+          <div class="why-list">
+            <article><span><svg><use href="#i-tooth"></use></svg></span><div><h3>Digital Diagnosis &amp; Modern Equipment</h3><p>Digital X-rays and modern dental chairs give a precise, comfortable picture of your treatment before it starts.</p></div></article>
+            <article><span><svg><use href="#i-shield"></use></svg></span><div><h3>Modern Sterilization System</h3><p>B &amp; S Class autoclave sterilization on every instrument, every patient, every time.</p></div></article>
+            <article><span><svg><use href="#i-rupee"></use></svg></span><div><h3>Affordable Treatment</h3><p>Quality dental care priced fairly, with costs explained clearly before any treatment begins.</p></div></article>
+            <article><span><svg><use href="#i-patient"></use></svg></span><div><h3>Patient-Centered Care</h3><p>A comfortable treatment environment and friendly staff, from the moment you walk in.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft specialists" id="specialists">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Our Team</span>
+          <h2>Meet Our Specialists</h2>
+          <p>Four experienced professionals covering orthodontics, surgery,<br class="desktop-only"> general dentistry, and hygiene — all under one roof.</p>
+        </div>
+        <div class="specialist-grid">
+          <article class="specialist-card reveal"><span class="doctor-icon"><svg><use href="#i-doctor"></use></svg></span><h3>Dr. Jitendra Kumar Sah</h3><strong>Consultant Orthodontist</strong><p>BDS (TU) · MDS (KU),<br>Orthodontics</p><small>NMC NO. 11398</small></article>
+          <article class="specialist-card reveal"><span class="doctor-icon"><svg><use href="#i-doctor"></use></svg></span><h3>Dr. Manish Yadav</h3><strong>Consultant Oral &amp; Maxillofacial<br>Surgeon</strong><p>BDS (BPKIHS) · MDS (TU)</p><small>NMC NO. 16253</small></article>
+          <article class="specialist-card featured reveal"><span class="doctor-icon"><svg><use href="#i-doctor"></use></svg></span><h3>Dr. Prabhat KC</h3><strong>Senior Dental Surgeon</strong><p>BDS (TU)</p><small>NMC NO. 40677</small></article>
+          <article class="specialist-card reveal"><span class="doctor-icon"><svg><use href="#i-doctor"></use></svg></span><h3>Karna Bahadur Mahat Chhetri</h3><strong>Senior Dental Hygienist</strong><p>CDS (CoMS)</p><small>NHPC NO. B-1271DH</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety">
+      <div class="container safety-grid">
+        <div class="safety-copy reveal reveal-left"><span class="outline-eyebrow">Patient Safety</span><h2>Meet Our Specialists</h2><p>At G.P Dental Care, patient safety is built into every step of treatment.</p></div>
+        <ul class="safety-list reveal reveal-right">
+          <li><span><svg><use href="#i-check"></use></svg></span>Fully sterilized instruments</li>
+          <li><span><svg><use href="#i-check"></use></svg></span>Disposable materials whenever required</li>
+          <li><span><svg><use href="#i-check"></use></svg></span>Strict infection control protocols</li>
+          <li><span><svg><use href="#i-check"></use></svg></span>Modern sterilization equipment</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="eyebrow">Our Clinic</span><h2>A Clean, Modern Environment</h2><p>Take a look inside our clinic — hygienic, well-equipped, and<br class="desktop-only"> designed for your comfort.</p></div>
+        <div class="gallery-grid reveal">
+          <button type="button" class="gallery-item gallery-large" data-image="assets/images/gallery-reception.jpg" data-caption="Clinic reception"><img src="assets/images/gallery-reception.jpg" alt="Clinic reception"></button>
+          <button type="button" class="gallery-item" data-image="assets/images/gallery-treatment.jpg" data-caption="Dental treatment room"><img src="assets/images/gallery-treatment.jpg" alt="Dental treatment room"></button>
+          <button type="button" class="gallery-item" data-image="assets/images/gallery-sterilization.jpg" data-caption="Sterilization room"><img src="assets/images/gallery-sterilization.jpg" alt="Sterilization room"></button>
+          <button type="button" class="gallery-item" data-image="assets/images/gallery-equipment.jpg" data-caption="Modern equipment"><img src="assets/images/gallery-equipment.jpg" alt="Modern equipment"></button>
+          <button type="button" class="gallery-item" data-image="assets/images/gallery-patients.jpg" data-caption="Happy patients"><img src="assets/images/gallery-patients.jpg" alt="Happy patients"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft reviews" id="reviews">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="eyebrow">Patient Reviews</span><h2>What Our Patients Say</h2><p>Real feedback from real patients.</p></div>
+        <div class="review-grid">
+          <article class="review-card active reveal"><div class="google-review"><span>G</span> Google Review</div><blockquote>“Best dental Care centre with professional Staffs.”</blockquote><div class="review-person"><span>R</span><div><strong>Ramchandra Khattri</strong><small>Local Guide · 7 reviews</small></div></div></article>
+          <article class="review-card reveal"><div class="google-review"><span>G</span> Google Review</div><blockquote>“The clinic is clean, organized and equipped with state-of-the-art equipment. The doctors are kind and experienced, the staff is also helpful and friendly, reliable and quality dental treatment.”</blockquote><div class="review-person"><span>Y</span><div><strong>Yubaraj Sharma</strong><small>5 reviews · Translated from Nepali</small></div></div></article>
+        </div>
+        <div class="review-links reveal"><span>Also find us on:</span><a href="#reviews"><strong>G</strong> Google Reviews</a><a href="#reviews"><svg><use href="#i-facebook"></use></svg>Facebook</a></div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-container">
+        <div class="section-heading centered reveal"><span class="eyebrow">Common Questions</span><h2>FAQ</h2></div>
+        <div class="faq-list reveal">
+          <article class="faq-item open"><button type="button" aria-expanded="true"><span>Do I need an appointment or can I walk in?</span><svg><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>You can walk in, but an appointment helps us reserve enough time and reduces your wait. For pain, swelling or other urgent needs, please call or WhatsApp before you arrive.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Is teeth whitening safe?</span><svg><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>Professional whitening is generally safe when it is selected and supervised by a dental professional after checking your teeth and gums.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>How much does a dental implant cost?</span><svg><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>The cost depends on the implant system, bone condition and whether any additional procedures are required. A clear estimate is provided after consultation.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Is root canal treatment really painful?</span><svg><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>Modern root canal treatment is usually comfortable because local anaesthesia is used. The procedure is designed to remove infection and relieve the pain caused by the damaged tooth.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Do you treat children?</span><svg><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>Yes. We provide gentle and friendly dental care for children, including check-ups, cleaning, fillings and preventive guidance.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Do you offer EMI or payment plans?</span><svg><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>Payment options may be available for selected treatments. Please speak with the clinic team before treatment so the available arrangements can be explained.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <div class="container appointment-grid">
+        <div class="appointment-copy reveal reveal-left">
+          <span class="outline-eyebrow">Book Appointment</span>
+          <h2>Ready to Get Started?</h2>
+          <p>Fill out the form and we'll confirm your slot within 2 hours by phone or WhatsApp.</p>
+          <div class="appointment-actions"><a class="button appointment-button" href="#appointment-form"><svg><use href="#i-calendar"></use></svg>Book Appointment</a><a class="button appointment-button secondary" href="https://wa.me/9779700000000" target="_blank" rel="noopener noreferrer"><svg><use href="#i-calendar"></use></svg>Chat on WhatsApp</a></div>
+          <div class="opening-hours"><h3>Opening Hours</h3><div><span>Sunday – Saturday</span><strong>7:00 AM – 8:00 PM</strong></div><div><span>Emergency Care</span><strong>Available</strong></div></div>
+        </div>
+
+        <form class="appointment-form reveal reveal-right" id="appointment-form" novalidate>
+          <div class="form-grid">
+            <label class="field full"><span>First Name <b>*</b></span><input type="text" name="name" autocomplete="name" placeholder="Enter Your Full Name" required><small></small></label>
+            <label class="field"><span>Phone Number <b>*</b></span><input type="tel" name="phone" autocomplete="tel" placeholder="+977 98X XXXXXXX" required><small></small></label>
+            <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@gmail.com"><small></small></label>
+            <label class="field"><span>Preferred Date <b>*</b></span><input type="date" name="date" required><small></small></label>
+            <label class="field"><span>Preferred Time <b>*</b></span><input type="time" name="time" required><small></small></label>
+            <label class="field full"><span>Treatment Required <b>*</b></span><select name="treatment" required><option value="">- Select a service -</option><option>General Dental Check-up</option><option>Tooth Filling</option><option>Tooth Extraction</option><option>Root Canal Treatment (RCT)</option><option>Dental Cleaning &amp; Scaling</option><option>Teeth Whitening</option><option>Dental Crowns</option><option>Dental Implants</option><option>Braces &amp; Orthodontics</option><option>Emergency Dental Care</option><option>Children’s Dentistry</option><option>Dentures</option></select><small></small></label>
+            <label class="field full"><span>Message</span><textarea name="message" rows="4" placeholder="Describe Your concern (optional)"></textarea><small></small></label>
+          </div>
+          <button type="submit" class="request-button">Request Appointment</button>
+          <p class="form-note">We'll confirm within 2 hours by phone or WhatsApp.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-soft contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal reveal-left">
+          <span class="eyebrow">Find Us</span>
+          <h2>Come Visit Us</h2>
+          <div class="contact-list">
+            <article><span><svg><use href="#i-pin"></use></svg></span><div><h3>Address</h3><p>G.P. Dental Care Pvt.Ltd. Bharatpur 14 Shivanagar Bazar</p></div></article>
+            <article><span><svg><use href="#i-phone"></use></svg></span><div><h3>Phone</h3><p><a href="tel:+9779700000000">+977 970-0000000</a> &nbsp;/&nbsp; <a href="tel:+9779800000000">+977 980-0000000</a></p></div></article>
+            <article><span><svg><use href="#i-whatsapp"></use></svg></span><div><h3>WhatsApp</h3><p><a href="https://wa.me/9779700000000" target="_blank" rel="noopener noreferrer">Send us a message</a></p></div></article>
+            <article><span><svg><use href="#i-mail"></use></svg></span><div><h3>Email</h3><p>Coming soon</p></div></article>
+            <article><span><svg><use href="#i-clock"></use></svg></span><div><h3>Hours</h3><p>Sun – Sat: 7:00 AM – 8:00 PM<br>Emergency care available</p></div></article>
+          </div>
+        </div>
+        <div class="map reveal reveal-right"><iframe title="Map showing G.P. Dental Care in Shivanagar, Bharatpur" src="https://www.google.com/maps?q=Shivanagar%20GP%20Dental%20Bharatpur%20Nepal&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/images/gp-dental-logo-transparent.png" alt="G.P. Dental Care Pvt. Ltd." width="113" height="69"><p>Healthy Smile • Trusted Care • Modern Dentistry.</p><div class="socials"><a href="#" aria-label="Facebook"><svg><use href="#i-facebook"></use></svg></a><a href="#" aria-label="Instagram"><svg><use href="#i-instagram"></use></svg></a><a href="https://wa.me/9779700000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg><use href="#i-whatsapp"></use></svg></a></div></div>
+      <div class="footer-column"><h3>Services</h3><a href="#services">General Check-up</a><a href="#services">Root Canal Treatment</a><a href="#services">Orthodontics</a><a href="#services">Dental Implants</a><a href="#services">Cosmetic Dentistry</a><a href="#services">Pediatric Care</a></div>
+      <div class="footer-column"><h3>Clinic</h3><a href="#specialists">Our Specialists</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Find Us</a><a href="#appointment">Book Appointment</a></div>
+      <div class="footer-book"><h3>Book Appointment</h3><p>Available same-day for emergencies.</p><a class="footer-button blue" href="#appointment"><svg><use href="#i-calendar"></use></svg>Book Now</a><a class="footer-button green" href="https://wa.me/9779700000000" target="_blank" rel="noopener noreferrer"><svg><use href="#i-calendar"></use></svg>Chat on WhatsApp</a></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> G.P. Dental Care Pvt. Ltd. All rights reserved.</span><span>G.P. Dental Care Pvt.Ltd. Bharatpur 14 Shivanagar Bazar</span></div></div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/9779700000000" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg><use href="#i-whatsapp"></use></svg></a>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top"><svg><use href="#i-up"></use></svg></button>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button type="button" class="lightbox-close" aria-label="Close image"><svg><use href="#i-close"></use></svg></button><figure><img src="" alt=""><figcaption></figcaption></figure></div>
+
+  <div id="google_translate_element" aria-hidden="true"></div>
+  <div class="translation-status" id="translation-status" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+</body>
+</html>
