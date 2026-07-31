@@ -2623,15 +2623,27 @@ body {
   }
 
   .gp-whatsapp-float svg {
-    width: 24px;
-    height: 24px;
-  }
+  width: 26px;
+  height: 26px;
+  display: block !important;
+  fill: #fff !important;
+  stroke: none !important;
+}
+
+.gp-whatsapp-float svg path {
+  fill: #fff !important;
+  stroke: none !important;
+}
 
   .gp-whatsapp-tooltip {
     display: none;
   }
 }
-
+.gp-whatsapp-float i{
+  font-size:30px;
+  color:#fff;
+  line-height:1;
+}
   .back-to-top {
     right: 12px;
   }
